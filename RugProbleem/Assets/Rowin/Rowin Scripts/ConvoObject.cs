@@ -7,5 +7,5 @@ public class ConvoObject : ScriptableObject
 {
    public string question;
    public string[] answers;
-   public int[] knowledgeAmount;
+   public ConvoObject[] convoNext;
 }

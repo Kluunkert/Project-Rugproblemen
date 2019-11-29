@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class AnswerButton : MonoBehaviour
 {
-   public ConvoObject nextConvo;
    protected ConversationSystem conversationSystem;
 
    public void Start()
@@ -12,12 +11,12 @@ public class AnswerButton : MonoBehaviour
        conversationSystem = GameObject.Find("ConversationManager").GetComponent<ConversationSystem>();
    }
 
-   public void OnClickButton()
+   public void OnClickButton(int i)
    {
-       if(nextConvo != null)
+       if(conversationSystem.nextConvo != null)
        {
-        conversationSystem.mainConvo = nextConvo;
-        
+            conversationSystem.mainConvo = conversationSystem.nextConvo[i];
+            conversationSystem.SetConvo();
        }
        else
        {
