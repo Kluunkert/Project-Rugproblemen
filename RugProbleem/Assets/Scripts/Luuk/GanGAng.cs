@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NotitieCode : MonoBehaviour
+public class GanGAng : MonoBehaviour
 {
     public List<GameObject> hidden;
     public List<GameObject> pages;
@@ -14,7 +14,6 @@ public class NotitieCode : MonoBehaviour
     {
         Unhide();
         PageChange();
-
     }
 
     public void Unhide()
@@ -24,14 +23,24 @@ public class NotitieCode : MonoBehaviour
 
     public void PageChange()
     {
-        if (Input.GetButton("NextPage"))
+        if (Input.GetButtonDown("NextPage") && pageInt < (pages.Count - 1))
         {
             pageInt++;
+            ForLoop(pageInt);
         }
-        if (Input.GetButton("PrevPage"))
+        if (Input.GetButtonDown("PrevPage") && pageInt > 0)
         {
             pageInt--;
+            ForLoop(pageInt);
         }
+    }
 
+    public void ForLoop(int i)
+    {
+        for (int b = 0; b < pages.Count; b++)
+        {
+            pages[b].SetActive(false);
+        }
+        pages[i].SetActive(true);
     }
 }

@@ -206,7 +206,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 129312405}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddd0ea7582c2d8c48b1f4cd56f58e255, type: 3}
+  m_Script: {fileID: 11500000, guid: 6910ed1b215244d4782f58bea3243e8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hidden:
@@ -677,14 +677,13 @@ GameObject:
   - component: {fileID: 656617403}
   - component: {fileID: 656617402}
   - component: {fileID: 656617401}
-  - component: {fileID: 656617400}
   m_Layer: 5
   m_Name: Notes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &656617399
 RectTransform:
   m_ObjectHideFlags: 0
@@ -707,25 +706,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 400, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &656617400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 656617398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddd0ea7582c2d8c48b1f4cd56f58e255, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hidden:
-  - {fileID: 1780447391}
-  - {fileID: 2060448605}
-  - {fileID: 787411220}
-  pages: []
-  pageInt: 0
-  unlocked: 0
 --- !u!114 &656617401
 MonoBehaviour:
   m_ObjectHideFlags: 0
