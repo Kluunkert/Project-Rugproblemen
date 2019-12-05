@@ -9,5 +9,10 @@ public class KM : MonoBehaviour
     public void MeterUp(int i)
     {
         knowledgeMeter =+ i;
+
+        //if(knowledgeMeter < 30)
+        //{
+        //
+        //}
     }
 }

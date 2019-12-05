@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 112000000, guid: f3b98d1366ce17c49ac439ab338ddf25,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -458,6 +458,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 352e210065dba3f42b556058d8b32980,
+        type: 3}
+      propertyPath: m_Name
+      value: K Wall
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 352e210065dba3f42b556058d8b32980,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -518,11 +523,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 8d29a24ce1f17a6468fcead69cf106e1, type: 2}
-    - target: {fileID: -927199367670048503, guid: 352e210065dba3f42b556058d8b32980,
-        type: 3}
-      propertyPath: m_Name
-      value: K Wall
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 352e210065dba3f42b556058d8b32980, type: 3}
 --- !u!1 &763892957
@@ -659,6 +659,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 352e210065dba3f42b556058d8b32980,
+        type: 3}
+      propertyPath: m_Name
+      value: K Wall (1)
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 352e210065dba3f42b556058d8b32980,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -719,11 +724,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 8d29a24ce1f17a6468fcead69cf106e1, type: 2}
-    - target: {fileID: -927199367670048503, guid: 352e210065dba3f42b556058d8b32980,
-        type: 3}
-      propertyPath: m_Name
-      value: K Wall (1)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 352e210065dba3f42b556058d8b32980, type: 3}
 --- !u!1001 &1136616937
@@ -807,6 +807,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: e761b99faccbc1a42ac3f2a7ad1f5339,
+        type: 3}
+      propertyPath: m_Name
+      value: LR K Wall
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e761b99faccbc1a42ac3f2a7ad1f5339,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -867,11 +872,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f857caccfbe20e745955402c26c192ed, type: 2}
-    - target: {fileID: -927199367670048503, guid: e761b99faccbc1a42ac3f2a7ad1f5339,
-        type: 3}
-      propertyPath: m_Name
-      value: LR K Wall
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e761b99faccbc1a42ac3f2a7ad1f5339, type: 3}
 --- !u!1 &1343660002
@@ -1014,7 +1014,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.0162468
+      value: -1.14
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1022,7 +1022,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.12944788
+      value: 2.85
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1139,6 +1139,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 671e430ba44b0cb40a5a69b9a7a489af,
+        type: 3}
+      propertyPath: m_Name
+      value: LR Wall 2 (1)
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 671e430ba44b0cb40a5a69b9a7a489af,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1199,11 +1204,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 88dddd15f2c1fd24eabb34bb8f7c3bdb, type: 2}
-    - target: {fileID: -927199367670048503, guid: 671e430ba44b0cb40a5a69b9a7a489af,
-        type: 3}
-      propertyPath: m_Name
-      value: LR Wall 2 (1)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 671e430ba44b0cb40a5a69b9a7a489af, type: 3}
 --- !u!1001 &1800902640
@@ -1213,6 +1213,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 671e430ba44b0cb40a5a69b9a7a489af,
+        type: 3}
+      propertyPath: m_Name
+      value: LR Wall 2
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 671e430ba44b0cb40a5a69b9a7a489af,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1273,11 +1278,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 67b3c3701841c404b8639c5945e914a6, type: 2}
-    - target: {fileID: -927199367670048503, guid: 671e430ba44b0cb40a5a69b9a7a489af,
-        type: 3}
-      propertyPath: m_Name
-      value: LR Wall 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 671e430ba44b0cb40a5a69b9a7a489af, type: 3}
 --- !u!1001 &1981435862
@@ -1361,6 +1361,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: a19d0b3d403166342966ab30da99c6ed,
+        type: 3}
+      propertyPath: m_Name
+      value: LR Wall (1)
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a19d0b3d403166342966ab30da99c6ed,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1421,11 +1426,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 30ed2ad6b3d224144bf4e99e7f5a98e7, type: 2}
-    - target: {fileID: -927199367670048503, guid: a19d0b3d403166342966ab30da99c6ed,
-        type: 3}
-      propertyPath: m_Name
-      value: LR Wall (1)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a19d0b3d403166342966ab30da99c6ed, type: 3}
 --- !u!1001 &2104285957
@@ -1636,6 +1636,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: a19d0b3d403166342966ab30da99c6ed,
+        type: 3}
+      propertyPath: m_Name
+      value: LR Wall
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a19d0b3d403166342966ab30da99c6ed,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1696,10 +1701,5 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 30ed2ad6b3d224144bf4e99e7f5a98e7, type: 2}
-    - target: {fileID: -927199367670048503, guid: a19d0b3d403166342966ab30da99c6ed,
-        type: 3}
-      propertyPath: m_Name
-      value: LR Wall
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a19d0b3d403166342966ab30da99c6ed, type: 3}
