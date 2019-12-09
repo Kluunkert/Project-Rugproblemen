@@ -33,7 +33,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats:
-    - _HdrExposure: 8
+    - _HdrExposure: 10
     - _SunStrength: 1
     m_Colors:
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
