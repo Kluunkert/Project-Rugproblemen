@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Rowin/UI Test.unity
+    path: Assets/Actual Scenes/Rowin/UI Test.unity
     guid: 86d23c4853cd3ef4ca53dc19ec141828
   - enabled: 1
-    path: Assets/Rowin/Rowin Test Scene.unity
+    path: Assets/Actual Scenes/Rowin/Rowin Test Scene.unity
     guid: 589dbc616950bce4c8ae4da8136874f2
   m_configObjects: {}
