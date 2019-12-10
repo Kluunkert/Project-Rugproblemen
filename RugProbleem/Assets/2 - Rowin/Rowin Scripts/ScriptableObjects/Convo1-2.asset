@@ -12,6 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30edca0909deff7448911ab239bd6331, type: 3}
   m_Name: Convo1-2
   m_EditorClassIdentifier: 
-  question: 
-  answers: []
-  convoNext: []
+  question: How could it be better
+  answers:
+  - I dont know
+  - Perhaps leave?
+  - GTFO
+  - Just neck
+  convoNext:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

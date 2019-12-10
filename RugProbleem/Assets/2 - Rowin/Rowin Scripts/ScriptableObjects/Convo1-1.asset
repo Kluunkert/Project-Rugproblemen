@@ -10,8 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 30edca0909deff7448911ab239bd6331, type: 3}
-  m_Name: Convo1-3
+  m_Name: Convo1-1
   m_EditorClassIdentifier: 
-  question: 
-  answers: []
-  convoNext: []
+  question: Thats good to hear! Did you experience any pain lately?
+  answers:
+  - Ive been fine
+  - Could be better
+  - Going bad
+  - Worse ass shit
+  convoNext:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

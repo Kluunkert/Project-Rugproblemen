@@ -8,7 +8,7 @@ public class ButtonScript : MonoBehaviour
 
    void Start()
    {
-       orgPos.position = this.transform.position;
+       
    }
    public void OnCollisionEnter(Collision coll)
    {
