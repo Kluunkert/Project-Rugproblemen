@@ -12,7 +12,7 @@ public class ConversationSystem : MonoBehaviour
     public Button[] buttons;
     public void Start()
     {
-        SetConvo();
+       // SetConvo();
     }
     public void SetConvo()
     {
