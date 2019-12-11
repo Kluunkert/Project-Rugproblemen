@@ -6,33 +6,45 @@ using TMPro;
 
 public class ConversationSystem : MonoBehaviour
 {
-    public ConvoObject mainConvo;
-    public ConvoObject[] nextConvo;
-    public TextMeshProUGUI questionText, knowledgeText;
     public Button[] buttons;
-    public void Start()
+    public ScriptableObject currentDialogue;
+    public GameObject _4Buttons;
+    public GameObject _2Buttons;
+    protected bool show4Buttons;
+    protected bool show2Buttons;
+    public TextMeshProUGUI mainQuestion;
+    void Update()
     {
-        SetConvo();
-    }
-    public void SetConvo()
-    {
-        if(mainConvo != null)
+        if(show4Buttons)
         {
-            questionText.text = mainConvo.question;
-
-            buttons[0].GetComponentInChildren<TextMeshProUGUI>().text = mainConvo.answers[0];
-            buttons[1].GetComponentInChildren<TextMeshProUGUI>().text = mainConvo.answers[1];
-            buttons[2].GetComponentInChildren<TextMeshProUGUI>().text = mainConvo.answers[2];
-            buttons[3].GetComponentInChildren<TextMeshProUGUI>().text = mainConvo.answers[3];
-
-            nextConvo[0] = mainConvo.convoNext[0];
-            nextConvo[1] = mainConvo.convoNext[1];
-            nextConvo[2] = mainConvo.convoNext[2];
-            nextConvo[3] = mainConvo.convoNext[3];
+            _4Buttons.SetActive(true);
+            if(show2Buttons)
+            {
+                _2Buttons.SetActive(true);
+            }
+            else
+            {
+                _2Buttons.SetActive(false);
+            }
         }
         else
         {
-            print("No Convo Left");
+            _4Buttons.SetActive(false);
+        }
+    }
+    public void Start()
+    {
+        if(currentDialogue is Boxes)
+        {
+            var Boxes = currentDialogue as Boxes;
+
+            mainQuestion.text = Boxes.boxesQuestion;
+        }
+        if(currentDialogue is Consultant)
+        {
+            var Consultant = currentDialogue as Consultant;
+
+            mainQuestion.text = Consultant.consultantQuestion;
         }
     }
 }

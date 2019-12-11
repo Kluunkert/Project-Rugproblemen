@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
-[CreateAssetMenu(fileName = "ConversationManager", menuName = "Conversation/ConvoObject", order = 1)]
+[CreateAssetMenu(fileName = "ConversationManager", menuName = "Conversation/Conversation Object", order = 0)]
 public class ConvoObject : ScriptableObject
 {
-   public string question;
-   public string[] answers;
-   public ConvoObject[] convoNext;
+   
+   protected Boxes boxes;
+   protected Consultant consultant;
 }

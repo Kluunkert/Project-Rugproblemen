@@ -4,17 +4,14 @@ using UnityEngine;
 
 public class ButtonScript : MonoBehaviour
 {
-   protected Transform orgPos;
+    public GameObject showButtons;
+    public bool showButtons_;
 
-   void Start()
-   {
-       
-   }
-   public void OnCollisionEnter(Collision coll)
-   {
-       if(coll.gameObject.GetComponent<BoxCollider>())
-       {
-           print("dickhead");
-       }
-   }
+    void Update()
+    {
+        if(showButtons_)
+        {
+            showButtons.SetActive(true);
+        }
+    }
 }

@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class AudioManagement : MonoBehaviour
 {
-    public AudioClip buttonAudio;
+    public List<AudioClip> sounds;
+    
+
     void Awake()
     {
         DontDestroyOnLoad(this);
