@@ -397,9 +397,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 545503523}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89a5765beaf723847a1b2b75e82b6e7a, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c770a08b8072e0469805a2952e67f72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  question: {fileID: 0}
 --- !u!114 &545503526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -479,7 +480,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 545503525}
+      - m_Target: {fileID: 0}
         m_MethodName: OnClickButton
         m_Mode: 3
         m_Arguments:
@@ -502,8 +503,8 @@ GameObject:
   - component: {fileID: 694984948}
   - component: {fileID: 694984947}
   - component: {fileID: 694984949}
-  - component: {fileID: 694984946}
   - component: {fileID: 694984945}
+  - component: {fileID: 694984946}
   m_Layer: 5
   m_Name: Answer 1
   m_TagString: Untagged
@@ -636,9 +637,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 694984943}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89a5765beaf723847a1b2b75e82b6e7a, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c770a08b8072e0469805a2952e67f72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  question: {fileID: 0}
 --- !u!114 &694984947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -940,8 +942,8 @@ GameObject:
   - component: {fileID: 1103301661}
   - component: {fileID: 1103301660}
   - component: {fileID: 1103301662}
-  - component: {fileID: 1103301659}
   - component: {fileID: 1103301658}
+  - component: {fileID: 1103301659}
   m_Layer: 5
   m_Name: Answer 1
   m_TagString: Untagged
@@ -1074,9 +1076,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1103301656}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89a5765beaf723847a1b2b75e82b6e7a, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c770a08b8072e0469805a2952e67f72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  question: {fileID: 0}
 --- !u!114 &1103301660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1371,9 +1374,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1159176504}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89a5765beaf723847a1b2b75e82b6e7a, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c770a08b8072e0469805a2952e67f72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  question: {fileID: 0}
 --- !u!114 &1159176507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1453,7 +1457,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1159176506}
+      - m_Target: {fileID: 0}
         m_MethodName: OnClickButton
         m_Mode: 3
         m_Arguments:
@@ -2725,9 +2729,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1743383022}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89a5765beaf723847a1b2b75e82b6e7a, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c770a08b8072e0469805a2952e67f72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  question: {fileID: 0}
 --- !u!114 &1743383025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2807,7 +2812,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1743383024}
+      - m_Target: {fileID: 0}
         m_MethodName: OnClickButton
         m_Mode: 3
         m_Arguments:
@@ -2904,9 +2909,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1793813455}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89a5765beaf723847a1b2b75e82b6e7a, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c770a08b8072e0469805a2952e67f72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  question: {fileID: 0}
 --- !u!114 &1793813458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2986,7 +2992,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1793813457}
+      - m_Target: {fileID: 0}
         m_MethodName: OnClickButton
         m_Mode: 3
         m_Arguments:
@@ -3046,9 +3052,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1821263268}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89a5765beaf723847a1b2b75e82b6e7a, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c770a08b8072e0469805a2952e67f72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  question: {fileID: 0}
 --- !u!114 &1821263271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3128,7 +3135,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1821263270}
+      - m_Target: {fileID: 0}
         m_MethodName: OnClickButton
         m_Mode: 3
         m_Arguments:
@@ -3343,9 +3350,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2048188585}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89a5765beaf723847a1b2b75e82b6e7a, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c770a08b8072e0469805a2952e67f72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  question: {fileID: 0}
 --- !u!114 &2048188588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3425,7 +3433,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2048188587}
+      - m_Target: {fileID: 0}
         m_MethodName: OnClickButton
         m_Mode: 3
         m_Arguments:
