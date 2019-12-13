@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ed5070897d949d47be82c8317e19099, type: 3}
   m_Name: Storage
   m_EditorClassIdentifier: 
-  boxesQuestion: pick up
+  boxesQuestion: Pick em up
   cantPickUp: []

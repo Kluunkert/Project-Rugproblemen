@@ -7,9 +7,5 @@ public class Consultant : ScriptableObject
 {
     public string consultantQuestion;
     public List<AudioClip> moreVoices;
-    public void PlayVoiceOver(AudioSource voice)
-    {
-        voice.PlayOneShot()
-    }
 
 }
