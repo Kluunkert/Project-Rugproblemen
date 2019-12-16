@@ -169,7 +169,6 @@ GameObject:
   - component: {fileID: 153244220}
   - component: {fileID: 153244219}
   - component: {fileID: 153244221}
-  - component: {fileID: 153244218}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -197,19 +196,6 @@ RectTransform:
   m_AnchoredPosition: {x: -160, y: -141.8}
   m_SizeDelta: {x: 300, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &153244218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 153244216}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c770a08b8072e0469805a2952e67f72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  question: {fileID: 0}
 --- !u!114 &153244219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,11 +276,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 445205643}
-        m_MethodName: ConsultantButton
-        m_Mode: 3
+        m_MethodName: ConsultantButton2
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 11400000, guid: e50e9d5a08a33b54fb992b81bbe5329a,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: Audiodialog, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -868,9 +855,10 @@ GameObject:
   - component: {fileID: 445205647}
   - component: {fileID: 445205646}
   - component: {fileID: 445205645}
+  - component: {fileID: 445205648}
   - component: {fileID: 445205644}
   - component: {fileID: 445205643}
-  - component: {fileID: 445205648}
+  - component: {fileID: 445205649}
   m_Layer: 5
   m_Name: ConsultantUI
   m_TagString: Untagged
@@ -890,8 +878,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49370a0bb84abab46b6174d1165760b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audiodialog: {fileID: 11400000, guid: 9c6e39a202517e241a9691655baf406f, type: 2}
   mainQuestion: {fileID: 963241556}
-  voiceOver: {fileID: 0}
   buttons:
   - {fileID: 153244221}
   - {fileID: 1757463747}
@@ -901,7 +889,6 @@ MonoBehaviour:
   _2Buttons: {fileID: 1217513661}
   show4Buttons: 0
   show2Buttons: 0
-  consultantObj: {fileID: 11400000, guid: f4a407dfdb8c4d042b49fe73c68ad87d, type: 2}
 --- !u!114 &445205644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1079,6 +1066,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &445205649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445205642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7840a122c950114b942f8748780620b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audiodialog: {fileID: 0}
+  audioSource: {fileID: 1591486098}
+  timer: 0
+  listPosCurrentDialogue: 0
+  conversating: 0
+  startConvo: 0
 --- !u!1 &682515026
 GameObject:
   m_ObjectHideFlags: 0
@@ -2620,6 +2625,7 @@ GameObject:
   - component: {fileID: 1224123457}
   - component: {fileID: 1224123456}
   - component: {fileID: 1224123455}
+  - component: {fileID: 1224123460}
   m_Layer: 5
   m_Name: StorageRoomUI
   m_TagString: Untagged
@@ -2639,8 +2645,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4da07d6ac75e3c44adc034dcb080214, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audiodialog: {fileID: 0}
   mainQuestion: {fileID: 805709461}
-  voiceOver: {fileID: 0}
   buttons:
   - {fileID: 1103301662}
   - {fileID: 1793813460}
@@ -2732,6 +2738,24 @@ RectTransform:
   m_AnchoredPosition: {x: -427.4, y: -562.7}
   m_SizeDelta: {x: 2150.9, y: 1952.6}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1224123460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224123454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7840a122c950114b942f8748780620b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audiodialog: {fileID: 0}
+  audioSource: {fileID: 1591486098}
+  timer: 0
+  listPosCurrentDialogue: 0
+  conversating: 0
+  startConvo: 0
 --- !u!1 &1363272401
 GameObject:
   m_ObjectHideFlags: 0
@@ -3041,6 +3065,7 @@ GameObject:
   - component: {fileID: 1591486097}
   - component: {fileID: 1591486096}
   - component: {fileID: 1591486095}
+  - component: {fileID: 1591486098}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -3113,6 +3138,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1591486098
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591486094}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1713141639
 GameObject:
   m_ObjectHideFlags: 0
@@ -3435,7 +3556,6 @@ GameObject:
   - component: {fileID: 1757463746}
   - component: {fileID: 1757463745}
   - component: {fileID: 1757463747}
-  - component: {fileID: 1757463744}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -3463,19 +3583,6 @@ RectTransform:
   m_AnchoredPosition: {x: 160, y: -141.8}
   m_SizeDelta: {x: 300, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1757463744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1757463742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c770a08b8072e0469805a2952e67f72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  question: {fileID: 0}
 --- !u!114 &1757463745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3556,11 +3663,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 445205643}
-        m_MethodName: ConsultantButton
-        m_Mode: 3
+        m_MethodName: ConsultantButton2
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 11400000, guid: 380d9af54e3516d48b97829509ec4682,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: Audiodialog, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

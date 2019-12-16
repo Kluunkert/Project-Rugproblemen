@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[CreateAssetMenu(fileName = "Dialogue List")]
+[CreateAssetMenu(fileName = "Dialog", menuName = "Conversation/Dialog", order = 0)]
 public class Audiodialog : ScriptableObject
 {
     public List<AudioClip> audioClips;
