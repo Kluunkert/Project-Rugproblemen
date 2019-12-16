@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class SwitchInfoHolder : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField]
+    private SwitchInfo switchInfo;
+    protected AudioSource switchSource;
+
     void Start()
     {
-        
+        switchSource = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnCollisionEnter(Collision coll)
     {
-        
+        if(coll.gameObject.CompareTag("Hand"))
+        {
+            switchInfo.switchState = !switchInfo.switchState;
+            print(switchInfo.switchToggle.name);
+            switchSource.PlayOneShot(switchInfo.switchAudio);
+        }
     }
 }

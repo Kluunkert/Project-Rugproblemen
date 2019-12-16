@@ -2,17 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SwitchInfo : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+[CreateAssetMenu(fileName = "Switch", menuName = "Interactable/Switch", order = 0)]
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+public class SwitchInfo : ScriptableObject
+{
+    public AudioClip switchAudio;
+    public bool switchState;
+    public GameObject switchToggle;
+    protected AudioManagement audioManager;
 }

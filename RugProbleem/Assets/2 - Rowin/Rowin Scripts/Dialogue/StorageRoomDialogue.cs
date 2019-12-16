@@ -11,26 +11,11 @@ public class StorageRoomDialogue : ConversationSystem
         mainQuestion.text = storageRoom.boxesQuestion;
     }
     void Update()
-        {
-            if(show4Buttons)
-            {
-                _4Buttons.SetActive(true);
-                if(show2Buttons)
-                {
-                    _2Buttons.SetActive(true);
-                }
-                else
-                {
-                    _2Buttons.SetActive(false);
-                }
-            }
-            else
-            {
-                _4Buttons.SetActive(false);
-            }
-        }
+    {
+        UpdateButtons();
+    }
 
-    public void ConsultantButton(int choice)
+    public void StorageRoomButton(int choice)
     {
 
     }
