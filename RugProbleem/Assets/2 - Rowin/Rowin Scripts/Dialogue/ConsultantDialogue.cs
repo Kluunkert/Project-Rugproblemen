@@ -7,34 +7,23 @@ using TMPro;
 public class ConsultantDialogue : ConversationSystem
 {
    public Consultant consultantObj;
+   private AudioManagement audioManagement;
 
    void OnEnable()
    {
        mainQuestion.text = consultantObj.consultantQuestion;
+       audioManagement = GameObject.Find("Audio Manager").GetComponent<AudioManagement>();
+       voiceOver = GetComponent<AudioSource>();
    }
 
     void Update()
     {
-        if(show4Buttons)
-        {
-            _4Buttons.SetActive(true);
-            if(show2Buttons)
-            {
-                _2Buttons.SetActive(true);
-            }
-            else
-            {
-                _2Buttons.SetActive(false);
-            }
-        }
-        else
-        {
-            _4Buttons.SetActive(false);
-        }
+        UpdateButtons();
     }
 
    public void ConsultantButton(int choice)
    {
-
+       voiceOver.PlayOneShot(audioManagement.sounds[0]);
+       print(choice);
    }
 }

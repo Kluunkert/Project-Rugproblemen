@@ -18,8 +18,7 @@ public class ConversationSystem : MonoBehaviour
     {
         voiceOver = GetComponent<AudioSource>();
     }
-
-    void Update()
+    public void UpdateButtons()
     {
         if(show4Buttons)
         {
