@@ -12,7 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eb564e3c0dad264c899a7fbb526b193, type: 3}
   m_Name: Reactie_Consult_Onvoldoende
   m_EditorClassIdentifier: 
-  audioClips: []
-  myStrings: []
-  myTimer: []
+  audioClips:
+  - {fileID: 8300000, guid: bb6e0451db8d573488e3dcb1c2259b13, type: 3}
+  - {fileID: 8300000, guid: 6b2309d4236299c49936a45d6af53e4c, type: 3}
+  - {fileID: 8300000, guid: 2e2e177e70032774ab36cd9edd936233, type: 3}
+  - {fileID: 8300000, guid: 4b6399ecb106cb847b077cad79ac10da, type: 3}
+  myStrings:
+  - Ik begrijp dat je minder wilt bewegen.
+  - Minder bewegen kan in het begin prettig voelen.
+  - Maar uit eindelijk geeft het meer klachten.
+  - Ga de dingen die geplant staan gewoon doen.
+  myTimer:
+  - 2
+  - 2
+  - 2
+  - 2
   question: 0
