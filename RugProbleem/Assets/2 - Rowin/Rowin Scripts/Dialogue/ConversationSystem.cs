@@ -7,16 +7,33 @@ using TMPro;
 
 public class ConversationSystem : MonoBehaviour
 {
+    public Audiodialog audiodialog;
+    protected DialogueProgress dialogueProgress;
     public TextMeshProUGUI mainQuestion;
-    public AudioSource voiceOver;
+    protected AudioSource voiceOver;
     public Button[] buttons;
     public GameObject _4Buttons;
     public GameObject _2Buttons;
     public bool show4Buttons;
     public bool show2Buttons;
-    void Start()
+    public void Begin()
     {
         voiceOver = GetComponent<AudioSource>();
+        dialogueProgress = GetComponent<DialogueProgress>();
+        dialogueProgress.StartDialogue(audiodialog);
+    }
+    public void UpdateProgress()
+    {
+        if (dialogueProgress.conversating)
+        {
+            dialogueProgress.ProgressDialogue(dialogueProgress.audiodialog, dialogueProgress.listPosCurrentDialogue);
+            mainQuestion.text = dialogueProgress.audiodialog.myStrings[dialogueProgress.listPosCurrentDialogue];
+        }
+        else
+        {
+            dialogueProgress.listPosCurrentDialogue = 0;
+            mainQuestion.text = null;
+        }   
     }
     public void UpdateButtons()
     {

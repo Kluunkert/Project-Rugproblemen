@@ -5,7 +5,7 @@ using UnityEngine;
 public class DialogueProgress : MonoBehaviour
 {
     public Audiodialog audiodialog;
-
+    protected ConversationSystem conversationSystem;
     public AudioSource audioSource;
 
     public float timer;
@@ -17,6 +17,7 @@ public class DialogueProgress : MonoBehaviour
 
     public void StartDialogue(Audiodialog a)
     {
+        conversationSystem = GetComponent<ConversationSystem>();
         conversating = true;
         startConvo = true;
 
@@ -42,13 +43,14 @@ public class DialogueProgress : MonoBehaviour
             {
                 if(i < (a.myStrings.Count - 1))
                 {
+                    //conversationSystem.show4Buttons = false;
                     listPosCurrentDialogue++;
                     MusicPlayer(a, listPosCurrentDialogue);
                     timer = a.myTimer[listPosCurrentDialogue];
                 }
                 else if(i >= (a.myStrings.Count - 1) && a.question == true)
                 {
-                    //ShowButtons
+                    conversationSystem.show4Buttons = true;   
                     Debug.Log("BUTTONS");
                     conversating = false;
                 }

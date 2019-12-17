@@ -13,10 +13,11 @@ public class StorageRoomDialogue : ConversationSystem
     void Update()
     {
         UpdateButtons();
+        UpdateProgress();
     }
 
     public void StorageRoomButton(int choice)
     {
-
+        
     }
 }

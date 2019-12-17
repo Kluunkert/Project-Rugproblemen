@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,24 +6,28 @@ using TMPro;
 
 public class ConsultantDialogue : ConversationSystem
 {
-   public Consultant consultantObj;
+   protected Consultant consultantObj;
    private AudioManagement audioManagement;
 
-   void OnEnable()
+   void Start()
    {
-       mainQuestion.text = consultantObj.consultantQuestion;
-       audioManagement = GameObject.Find("Audio Manager").GetComponent<AudioManagement>();
-       voiceOver = GetComponent<AudioSource>();
+       Begin();
    }
 
     void Update()
     {
         UpdateButtons();
+        UpdateProgress();
     }
 
-   public void ConsultantButton(int choice)
+   public void ConsultantButton4(Audiodialog audio_4)
    {
-       voiceOver.PlayOneShot(audioManagement.sounds[0]);
-       print(choice);
+       show2Buttons = false;
+       dialogueProgress.StartDialogue(audio_4);
+   }
+   public void ConsultantButton2(Audiodialog audio_2)
+   {
+       show4Buttons = false;
+       dialogueProgress.StartDialogue(audio_2);
    }
 }
