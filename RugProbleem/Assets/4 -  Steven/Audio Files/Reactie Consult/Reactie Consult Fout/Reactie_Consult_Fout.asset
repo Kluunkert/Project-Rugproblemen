@@ -19,3 +19,5 @@ MonoBehaviour:
   myTimer:
   - 4
   question: 0
+  questBool: 0
+  quest: {fileID: 11400000, guid: c6f69a5ce80a7b841a564e9508a5a6ba, type: 2}

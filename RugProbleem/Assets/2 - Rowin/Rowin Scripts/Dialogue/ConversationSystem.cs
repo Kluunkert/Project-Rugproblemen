@@ -33,7 +33,7 @@ public class ConversationSystem : MonoBehaviour
         {
             dialogueProgress.listPosCurrentDialogue = 0;
             mainQuestion.text = null;
-        }   
+        }
     }
     public void UpdateButtons()
     {

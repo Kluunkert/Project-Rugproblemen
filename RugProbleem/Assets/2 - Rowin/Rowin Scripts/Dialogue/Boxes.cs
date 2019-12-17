@@ -6,7 +6,8 @@ using TMPro;
 [CreateAssetMenu(fileName = "Storage", menuName = "Conversation/Boxes", order = 2)]
 public class Boxes : ScriptableObject
 {
-    public string boxesQuestion;
+   public string questObjective;
+   public string boxesQuestion;
    public List<GameObject> cantPickUp;
 
    public void DisableBoxes(int amountOfBadBoxes)
