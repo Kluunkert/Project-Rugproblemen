@@ -13,4 +13,9 @@ MonoBehaviour:
   m_Name: Consultant-1
   m_EditorClassIdentifier: 
   questObjective: Gather info
-  gatherInfo: []
+  gatherInfo:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
