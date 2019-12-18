@@ -12,5 +12,6 @@ public class Audiodialog : ScriptableObject
     public bool question;
     public bool questBool;
     public ScriptableObject quest;
+    public int questAmount;
 }
 

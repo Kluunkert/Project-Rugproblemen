@@ -60,7 +60,7 @@ public class DialogueProgress : MonoBehaviour
                 {
                     if(a.questBool == true)
                     {
-                        questManager.UpdateQuest(a.quest);
+                        questManager.UpdateQuest(a.quest, a.questAmount);
                     }
                     
                     conversating = false;

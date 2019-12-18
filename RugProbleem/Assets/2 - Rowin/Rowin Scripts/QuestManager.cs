@@ -6,18 +6,22 @@ using TMPro;
 
 public class QuestManager : MonoBehaviour
 {
-    public TextMeshProUGUI questText;
-   public void UpdateQuest(ScriptableObject questObj)
-   {
-       if(questObj is Boxes)
-       {
-           var boxes = questObj as Boxes;
-           questText.text = boxes.questObjective;
-       }
-       if(questObj is Consultant)
-       {
-           var consultant = questObj as Consultant;
-           questText.text = consultant.questObjective;
-       }
-   }
+   public TextMeshProUGUI questText;
+   public TextMeshProUGUI questAmount;
+   
+   public void UpdateQuest(ScriptableObject questObj, int amount)
+    {
+            if(questObj is Boxes)
+            {
+                var boxes = questObj as Boxes;
+                questText.text = boxes.questObjective;
+                boxes.DisableBoxes(amount);
+            }
+            if(questObj is Consultant)
+            {
+                var consultant = questObj as Consultant;
+                questText.text = consultant.questObjective;
+                consultant.RemoveInteractable(amount);
+            }
+    }
 }

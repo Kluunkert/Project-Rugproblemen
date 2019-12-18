@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7adc100bb9670714f8dd808174eb4a04, type: 3}
   m_Name: Consultant-2
   m_EditorClassIdentifier: 
-  questObjective: 
-  gatherInfo: []
+  questObjective: Go fuck yoself
+  gatherInfo:
+  - {fileID: 0}
+  - {fileID: 0}
