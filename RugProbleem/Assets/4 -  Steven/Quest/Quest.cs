@@ -16,7 +16,6 @@ public class Quest : MonoBehaviour
     public Text myQuestText;
     public QuestItem testQuest;
 
-
     public void Start()
     {
         NewQuest(testQuest);
