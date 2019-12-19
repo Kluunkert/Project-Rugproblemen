@@ -11,6 +11,8 @@ public class QuestManager : MonoBehaviour
    
    public void UpdateQuest(ScriptableObject questObj, int amount)
     {
+        questAmount.text = amount.ToString();
+        
             if(questObj is Boxes)
             {
                 var boxes = questObj as Boxes;
