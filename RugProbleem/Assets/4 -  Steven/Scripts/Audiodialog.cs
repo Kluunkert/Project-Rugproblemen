@@ -10,5 +10,8 @@ public class Audiodialog : ScriptableObject
     public List<string> myStrings;
     public List <float> myTimer;
     public bool question;
+    public bool questBool;
+    public ScriptableObject quest;
+    public int questAmount;
 }
 

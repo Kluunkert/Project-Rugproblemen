@@ -6,6 +6,7 @@ public class DialogueProgress : MonoBehaviour
 {
     public Audiodialog audiodialog;
     protected ConversationSystem conversationSystem;
+    protected QuestManager questManager;
     public AudioSource audioSource;
 
     public float timer;
@@ -18,6 +19,7 @@ public class DialogueProgress : MonoBehaviour
     public void StartDialogue(Audiodialog a)
     {
         conversationSystem = GetComponent<ConversationSystem>();
+        questManager = GameObject.Find("Quest Manager").GetComponent<QuestManager>();
         conversating = true;
         startConvo = true;
 
@@ -56,6 +58,11 @@ public class DialogueProgress : MonoBehaviour
                 }
                 else
                 {
+                    if(a.questBool == true)
+                    {
+                        questManager.UpdateQuest(a.quest, a.questAmount);
+                    }
+                    
                     conversating = false;
                 }
             }

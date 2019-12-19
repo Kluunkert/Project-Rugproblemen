@@ -28,3 +28,5 @@ MonoBehaviour:
   - 2
   - 2
   question: 0
+  questBool: 1
+  quest: {fileID: 11400000, guid: 1c847dadb8817ec4e91f765aa1ede628, type: 2}
