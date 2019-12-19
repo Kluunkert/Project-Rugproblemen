@@ -8,11 +8,8 @@ public class DialogueProgress : MonoBehaviour
     protected ConversationSystem conversationSystem;
     protected QuestManager questManager;
     public AudioSource audioSource;
-
     public float timer;
-
     public int listPosCurrentDialogue;
-
     public bool conversating;
     public bool startConvo;
 
