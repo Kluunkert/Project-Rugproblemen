@@ -182,11 +182,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5070972797979320806}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 39171d45321c126488497f23879a761f,
-        type: 3}
-      propertyPath: m_Name
-      value: Sink Knob Right
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 39171d45321c126488497f23879a761f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -242,6 +237,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 39171d45321c126488497f23879a761f,
+        type: 3}
+      propertyPath: m_Name
+      value: Sink Knob Right
+      objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 39171d45321c126488497f23879a761f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 12d4b0485ee9c74449f5e2740ee151ce, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39171d45321c126488497f23879a761f, type: 3}
 --- !u!4 &2583250865114065217 stripped
@@ -257,11 +262,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5070972797979320806}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 9709017e8f9a10246bf3fe574ab98276,
-        type: 3}
-      propertyPath: m_Name
-      value: Sink Faucet
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9709017e8f9a10246bf3fe574ab98276,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -317,6 +317,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 9709017e8f9a10246bf3fe574ab98276,
+        type: 3}
+      propertyPath: m_Name
+      value: Sink Faucet
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9709017e8f9a10246bf3fe574ab98276, type: 3}
 --- !u!4 &2928630284998894527 stripped
@@ -332,11 +337,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5070972797979320806}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 6d31b05fd2caa764183f19fc2f400312,
-        type: 3}
-      propertyPath: m_Name
-      value: Sink Knob Left
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 6d31b05fd2caa764183f19fc2f400312,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -392,6 +392,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 6d31b05fd2caa764183f19fc2f400312,
+        type: 3}
+      propertyPath: m_Name
+      value: Sink Knob Left
+      objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 6d31b05fd2caa764183f19fc2f400312,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f07e8ee664e2010438b99c337257b83d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d31b05fd2caa764183f19fc2f400312, type: 3}
 --- !u!4 &4164300136680484033 stripped
