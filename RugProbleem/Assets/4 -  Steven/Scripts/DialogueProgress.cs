@@ -16,7 +16,8 @@ public class DialogueProgress : MonoBehaviour
     public void StartDialogue(Audiodialog a)
     {
         conversationSystem = GetComponent<ConversationSystem>();
-        questManager = GameObject.Find("Quest Manager").GetComponent<QuestManager>();
+        audioSource = Camera.main.GetComponent<AudioSource>();
+        //questManager = GameObject.Find("Quest Manager").GetComponent<QuestManager>();
         conversating = true;
         startConvo = true;
 
