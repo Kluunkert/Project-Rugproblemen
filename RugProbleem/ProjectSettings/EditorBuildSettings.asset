@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/1 - Main Folder/MainScene.unity
     guid: 6b7f3cfc8be42e24daf3a0a23625fe52
   - enabled: 0
-    path: Assets/Scenes for final game/(A)Main House.unity
+    path: Assets/IMPLEMENTATION/Scenes for final game/(A)Main House.unity
     guid: 7c1cf04998c03c74e895dae585d4ca1f
   m_configObjects: {}
