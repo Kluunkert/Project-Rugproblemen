@@ -93,6 +93,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3282839473842157426}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 951216e988233eb4aab60d226bdc408c,
+        type: 3}
+      propertyPath: m_Name
+      value: Stove  Cabinet RD
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 951216e988233eb4aab60d226bdc408c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -148,11 +153,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 951216e988233eb4aab60d226bdc408c,
+    - target: {fileID: -1504981713932161579, guid: 951216e988233eb4aab60d226bdc408c,
         type: 3}
-      propertyPath: m_Name
-      value: Stove  Cabinet RD
-      objectReference: {fileID: 0}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fef4c4e019db33443865812b62efe4ac, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 951216e988233eb4aab60d226bdc408c, type: 3}
 --- !u!4 &6138780954648651216 stripped
@@ -168,6 +173,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3282839473842157426}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 8cea259607c007642937d35b553420f8,
+        type: 3}
+      propertyPath: m_Name
+      value: Stove  Cabinet RU
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8cea259607c007642937d35b553420f8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -223,11 +233,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 8cea259607c007642937d35b553420f8,
+    - target: {fileID: -1504981713932161579, guid: 8cea259607c007642937d35b553420f8,
         type: 3}
-      propertyPath: m_Name
-      value: Stove  Cabinet RU
-      objectReference: {fileID: 0}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2e321060c6b0cd74ca8fd1a571822b5e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cea259607c007642937d35b553420f8, type: 3}
 --- !u!4 &6548500795172295591 stripped
@@ -403,6 +413,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3282839473842157426}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 80d765113439c8b48ad8951f1742b58e,
+        type: 3}
+      propertyPath: m_Name
+      value: Stove Cabinet LD
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 80d765113439c8b48ad8951f1742b58e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -458,11 +473,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 80d765113439c8b48ad8951f1742b58e,
+    - target: {fileID: -1504981713932161579, guid: 80d765113439c8b48ad8951f1742b58e,
         type: 3}
-      propertyPath: m_Name
-      value: Stove Cabinet LD
-      objectReference: {fileID: 0}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dabf644b277b9c449ad733f5940c25b4, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80d765113439c8b48ad8951f1742b58e, type: 3}
 --- !u!4 &9148508929524678146 stripped
@@ -618,6 +633,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 608c2f5cb8f4cca4fb36e4dab0bd3a15,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9088a6cc1dd0e0b4abde0528f0337580, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 608c2f5cb8f4cca4fb36e4dab0bd3a15, type: 3}
 --- !u!4 &1416394682244601052 stripped
