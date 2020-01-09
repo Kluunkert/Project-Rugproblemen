@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Quest : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class Quest : MonoBehaviour
 
     public RaycastHit hit;
 
-    public Text myQuestText;
+    public TextMeshProUGUI myQuestText;
 
     public float rayDis;
 
@@ -21,12 +22,13 @@ public class Quest : MonoBehaviour
 
     public void Start()
     {
+        DontDestroyOnLoad(this);
         NewQuest(storyQuests[listPos]);
     }
 
     public void Update()
     {
-        if (Physics.Raycast(transform.position, transform.forward, out hit, rayDis) && hit.collider.gameObject.tag == "QuestItem")
+        if (Physics.Raycast(transform.position, transform.forward, out hit, rayDis) && hit.collider.gameObject.tag == "Item")
         {
             if (Input.GetButtonDown("Fire1"))
             {

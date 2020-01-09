@@ -6,7 +6,7 @@ using UnityEngine;
 public class KnowledgeItem : QuestItem
 {
     public GameObject item;
-    public GameObject positionToSpawn;
+    public Transform positionToSpawn;
 
     public int knowledge;
 
@@ -14,7 +14,7 @@ public class KnowledgeItem : QuestItem
     {
         base.QuestStart(quest, parent);
 
-        Instantiate(item, positionToSpawn.transform.position, positionToSpawn.transform.rotation, parent);
+        Instantiate(item, positionToSpawn.transform.position, positionToSpawn.transform.rotation);
     }
 
     public override void PickUp(Quest quest)
