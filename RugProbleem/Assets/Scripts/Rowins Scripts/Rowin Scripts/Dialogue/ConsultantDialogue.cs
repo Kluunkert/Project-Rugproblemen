@@ -24,10 +24,12 @@ public class ConsultantDialogue : ConversationSystem
    {
        show2Buttons = false;
        dialogueProgress.StartDialogue(audio_4);
+       quest.listPos++;
    }
    public void ConsultantButton2(Audiodialog audio_2)
    {
        show4Buttons = false;
        dialogueProgress.StartDialogue(audio_2);
+       quest.listPos++;
    }
 }
