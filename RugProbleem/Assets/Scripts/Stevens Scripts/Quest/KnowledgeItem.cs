@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = ("KnowledgeItem"), menuName = "KnowledgeItem/ QuestItem")]
+[CreateAssetMenu(fileName = ("Quest"), menuName = "Quest/New Knowledge Quest")]
 public class KnowledgeItem : QuestItem
 {
     public GameObject item;
@@ -10,24 +10,15 @@ public class KnowledgeItem : QuestItem
 
     public int knowledge;
 
-    public override void QuestStart(Quest quest)
+    public override void QuestStart(Quest quest, Transform parent)
     {
-        base.QuestStart(quest);
+        base.QuestStart(quest, parent);
 
-        Instantiate(item, positionToSpawn.transform, quest.itemspawned);
+        Instantiate(item, positionToSpawn.transform.position, positionToSpawn.transform.rotation, parent);
     }
 
     public override void PickUp(Quest quest)
     {
-        base.PickUp(quest);
-
-        if(quest.currentQuest.questItemNum == questItemNum)
-        {
-            quest.completed = true;
-        }
-        else
-        {
-            Debug.Log("Wrong item");
-        }
+        quest.ContinueQuest(this);
     }
 }
