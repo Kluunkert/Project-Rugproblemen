@@ -8,6 +8,7 @@ public class TutorialPopUp : MonoBehaviour
     public List<bool> high;
 
     public float timer = 90f;
+    public float skipTime;
     public bool startTimer;
 
     public GameObject kluis;
@@ -20,6 +21,7 @@ public class TutorialPopUp : MonoBehaviour
 
     public void Update()
     {
+        skipTime = timer;
         if (startTimer == true && timer >= 0)
         {
             timer -= Time.deltaTime;
@@ -40,5 +42,10 @@ public class TutorialPopUp : MonoBehaviour
             high[gram] = true;
             startTimer = true;
         }
+    }
+
+    public void SkipTutorial()
+    {
+        timer -= skipTime;
     }
 }
