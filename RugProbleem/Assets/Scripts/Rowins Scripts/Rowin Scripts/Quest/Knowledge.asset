@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Knowledge
   m_EditorClassIdentifier: 
   questItemNum: 0
-  questText: 
+  questText: Find Blue Cube
   fourButtons: 0
-  item: {fileID: 0}
-  positionToSpawn: {fileID: 0}
-  knowledge: 0
+  item: {fileID: 4216620062048066583, guid: 2c4b9f2d71734494cb0287550cf0914b, type: 3}
+  positionToSpawn: {fileID: 6125238448314909658, guid: d54dd7f6addb401498061fef795a9c24,
+    type: 3}
+  knowledge: 1
