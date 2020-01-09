@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac056c0f1d624334ebbdb48e8e3e144b, type: 3}
   m_Name: Quest 1
   m_EditorClassIdentifier: 
-  questItemNum: 0
-  questText: Go To Consultant
+  questItemNum: 1
+  questText: Find Blue CUBE
   fourButtons: 0
