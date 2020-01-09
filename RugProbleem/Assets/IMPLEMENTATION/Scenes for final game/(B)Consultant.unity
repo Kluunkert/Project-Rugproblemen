@@ -131,6 +131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OVRPlayerController
       objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -668,7 +672,7 @@ Canvas:
   m_GameObject: {fileID: 454470899}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 2
+  m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -689,7 +693,7 @@ RectTransform:
   m_GameObject: {fileID: 454470899}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.02385576, y: 0.023855755, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 709771810}
   - {fileID: 1566273509}
@@ -698,9 +702,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 4.16}
-  m_SizeDelta: {x: 519, y: 368}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &544861769
 GameObject:
   m_ObjectHideFlags: 0
@@ -2604,3 +2608,72 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114415146}
   m_CullTransparentMesh: 0
+--- !u!1001 &7337944780962998161
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7337944779926343250, guid: db72fbacb07204742a920585ab629436,
+        type: 3}
+      propertyPath: m_Name
+      value: 1stPerson
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337944779926343257, guid: db72fbacb07204742a920585ab629436,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.6473749
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337944779926343257, guid: db72fbacb07204742a920585ab629436,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.4297922
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337944779926343257, guid: db72fbacb07204742a920585ab629436,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.499226
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337944779926343257, guid: db72fbacb07204742a920585ab629436,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337944779926343257, guid: db72fbacb07204742a920585ab629436,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337944779926343257, guid: db72fbacb07204742a920585ab629436,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337944779926343257, guid: db72fbacb07204742a920585ab629436,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337944779926343257, guid: db72fbacb07204742a920585ab629436,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337944779926343257, guid: db72fbacb07204742a920585ab629436,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337944779926343257, guid: db72fbacb07204742a920585ab629436,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337944779926343257, guid: db72fbacb07204742a920585ab629436,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: db72fbacb07204742a920585ab629436, type: 3}

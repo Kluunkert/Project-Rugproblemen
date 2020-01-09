@@ -4,19 +4,49 @@ using UnityEngine;
 
 public class FirstPersonCam : MonoBehaviour
 {
-    public float moveSpeed = 10;
-    public Rigidbody rig;
+    public Rigidbody rb;
+
+    public Vector3 dir;
+
+    public float movementSpeed, jumpHeight;
+    public bool canJump;
+    
+
+    private void Start()
+    {
+        canJump = true;
+        Physics.IgnoreLayerCollision(8, 9);    
+        rb = GetComponent<Rigidbody>();
+    }
 
     void Update()
     {
-        Move();
+        PlayerMove();
     }
 
-    public void Move()
+    public void PlayerMove()
     {
-        float hor = Input.GetAxis("Horizontal");
-        float ver = Input.GetAxis("Vertical");
+        float horiInput = Input.GetAxis("Horizontal");
+        float vertInput = Input.GetAxis("Vertical");
 
-        transform.Translate(hor, 0, ver);
+        dir = new Vector3(horiInput, 0, vertInput);
+
+        transform.Translate(dir * movementSpeed * Time.deltaTime);
+
+    //     if(canJump)
+    //     {
+    //         if(Input.GetButtonDown("Jump"))
+    //         {
+    //             rb.AddForce(0,jumpHeight,0);
+    //             canJump = false;
+    //         }
+    //     }
+    // }
+    // void OnCollisionEnter(Collision coll)
+    // {
+    //     if(coll.transform.CompareTag("Floor"))
+    //     {
+    //         canJump = true;
+    //     }
     }
 }
