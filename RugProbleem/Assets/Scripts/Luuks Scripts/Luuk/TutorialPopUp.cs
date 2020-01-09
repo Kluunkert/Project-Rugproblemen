@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class TutorialPopUp : MonoBehaviour
 {
-    public List<GameObject> pep;
-    public List<bool> high;
+    public List<GameObject> tutPopUpGameObject;
+    public List<bool> noLongerPoppinUp;
 
     public float timer = 90f;
     public float skipTime;
     public bool startTimer;
 
-    public GameObject kluis;
+    public GameObject managerTut;
 
 
     public void Awake()
     {
-        kluis = gameObject;
+        managerTut = gameObject;
     }
 
     public void Update()
@@ -33,13 +33,13 @@ public class TutorialPopUp : MonoBehaviour
         }
     }
 
-    public void Snuiven(int gram)
+    public void TutPopUp(int i)
     {
-        if (high[gram] == false && timer >= 90f)
+        if (noLongerPoppinUp[i] == false && timer >= 90f)
         {
             timer = 90f;
-            Instantiate(pep[gram], transform.position, Quaternion.identity, kluis.transform);
-            high[gram] = true;
+            Instantiate(tutPopUpGameObject[i], transform.position, Quaternion.identity, managerTut.transform);
+            noLongerPoppinUp[i] = true;
             startTimer = true;
         }
     }

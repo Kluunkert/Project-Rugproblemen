@@ -9,6 +9,7 @@ public class Quest : MonoBehaviour
     public List<QuestItem> storyQuests;
 
     public GameObject itemsSpawned;
+    public GameObject tutPopUp;
 
     public RaycastHit hit;
 
@@ -38,6 +39,11 @@ public class Quest : MonoBehaviour
                 }
             }
         }
+        else if (Physics.Raycast(transform.position, transform.forward, out hit, rayDis) && hit.collider.gameObject.tag == "TutPopUp")
+        {
+            tutPopUp.GetComponent<TutorialPopUp>().TutPopUp(hit.collider.gameObject.GetComponent<TutorialPopUp>.);
+        }
+
     }
 
     public void NewQuest(QuestItem item)
@@ -48,7 +54,7 @@ public class Quest : MonoBehaviour
 
         //put 4 button bool equal to storyQuests[listPos}.fourButtons
     }
-    
+
     public void ContinueQuest(QuestItem item)
     {
         if (listPos < storyQuests.Count - 1)
@@ -57,7 +63,7 @@ public class Quest : MonoBehaviour
 
             NewQuest(storyQuests[listPos]);
 
-            Destroy(hit.collider.gameObject);         
+            Destroy(hit.collider.gameObject);
         }
         else gameCompleted = true;
     }
