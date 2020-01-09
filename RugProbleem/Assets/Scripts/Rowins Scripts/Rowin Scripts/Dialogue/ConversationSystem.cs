@@ -7,6 +7,7 @@ using TMPro;
 
 public class ConversationSystem : MonoBehaviour
 {
+    public Quest quest;
     public Audiodialog audiodialog;
     protected DialogueProgress dialogueProgress;
     public TextMeshProUGUI mainQuestion;
@@ -18,6 +19,7 @@ public class ConversationSystem : MonoBehaviour
     public bool show2Buttons;
     public void Begin()
     {
+        quest = GetComponent<Quest>();
         voiceOver = GetComponent<AudioSource>();
         dialogueProgress = GetComponent<DialogueProgress>();
         dialogueProgress.StartDialogue(audiodialog);
