@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class TeleportDoor : MonoBehaviour
 {
-    public bool storage, consultant;
+    public bool storage, consultant, house;
     public Loading loading;
+
+    public string room;
 
     void OnCollisionEnter(Collision coll)
     {
@@ -15,13 +17,17 @@ public class TeleportDoor : MonoBehaviour
             print("Door");
             if(storage == true)
             {
-                loading.LevelLoader(2);
+                loading.LevelLoader(room);
                 print("Storage");
             }
             else if(consultant == true)
             {
-                loading.LevelLoader(1);
+                loading.LevelLoader(room);
                 print("Consultant");
+            }
+            else if(house == true)
+            {
+                loading.LevelLoader(room);
             }
         }
     }

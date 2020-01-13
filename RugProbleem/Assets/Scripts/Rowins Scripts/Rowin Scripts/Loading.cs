@@ -7,27 +7,19 @@ using TMPro;
 
 public class Loading : MonoBehaviour
 {
-    public GameObject loadingScreen;
-    public Slider progressSlider;
-    public TextMeshProUGUI loadText;
-    public void LevelLoader(int sceneIndex)
+    public Animator transition;
+    public int loadingTime;
+
+    public void LevelLoader(string sceneIndex)
     {
         StartCoroutine(LoadLevel(sceneIndex));
     }
-    IEnumerator LoadLevel(int sceneIndex)
+    IEnumerator LoadLevel(string sceneIndex)
     {
-        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
+        transition.SetTrigger("Play");
 
-        loadingScreen.SetActive(true);
+        yield return new WaitForSeconds(loadingTime);
 
-        while (!operation.isDone) 
-        {
-            float progress = Mathf.Clamp01(operation.progress / .9f);
-            progressSlider.value = progress;
-
-            loadText.text = "Loading: " + progress * 100f +"%";
-
-            yield return null;
-        }
+        SceneManager.LoadScene(sceneIndex);
     }
 }
