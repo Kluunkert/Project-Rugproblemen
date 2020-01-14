@@ -18,6 +18,6 @@ public class StorageRoomDialogue : ConversationSystem
 
     public void StorageRoomButton(int choice)
     {
-        
+                  
     }
 }
