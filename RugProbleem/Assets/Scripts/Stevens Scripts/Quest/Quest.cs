@@ -39,11 +39,6 @@ public class Quest : MonoBehaviour
                 }
             }
         }
-        else if (Physics.Raycast(transform.position, transform.forward, out hit, rayDis) && hit.collider.gameObject.tag == "TutPopUp")
-        {
-            tutPopUp.GetComponent<TutorialPopUp>().TutPopUp(hit.collider.gameObject.GetComponent<TutPopUpNumber>().thisPopUp);
-        }
-
     }
 
     public void NewQuest(QuestItem item)
