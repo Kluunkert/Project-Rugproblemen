@@ -4,21 +4,19 @@ using UnityEngine;
 
 public class NotitieBlock : MonoBehaviour
 {
-    public List<GameObject> hidden;
-    public List<GameObject> pages;
+    public List<GameObject> noteBookPages;
 
     public int pageInt;
     public int unlocked;
 
     public void Update()
     {
-        Unhide();
         PageChange();
     }
 
-    public void Unhide()
+    public void AddToList()
     {
-        hidden[unlocked].SetActive(true);
+        noteBookPages.Add(gameObject);
     }
 
     public void PageChange()
@@ -28,7 +26,7 @@ public class NotitieBlock : MonoBehaviour
             pageInt++;
             ForLoop(pageInt);
         }
-        if (Input.GetButtonDown("PrevPage") && pageInt >= (pages.Count + 1))
+        if (Input.GetButtonDown("PrevPage") && pageInt >= (noteBookPages.Count + 1))
         {
             pageInt--;
             ForLoop(pageInt);
@@ -37,11 +35,11 @@ public class NotitieBlock : MonoBehaviour
 
     public void ForLoop(int i)
     {
-        for (int b = 0; b < pages.Count; b++)
+        for (int b = 0; b < noteBookPages.Count; b++)
         {
-            pages[b].SetActive(false);
+            noteBookPages[b].SetActive(false);
         }
-        pages[i].SetActive(true);
+        noteBookPages[i].SetActive(true);
     }
 }
 //__________________________________________________________________________________________________________________________________________________________________________________________________________________________//

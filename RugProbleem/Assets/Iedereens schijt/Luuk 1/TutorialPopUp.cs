@@ -8,7 +8,9 @@ public class TutorialPopUp : MonoBehaviour
     public List<bool> noLongerPoppinUp;
 
     public float timer = 90f;
-    public float skipTime;
+    public float resetTimer = 90f;
+    public int offset = 4;
+    public int childCount;
     public bool startTimer;
 
     public GameObject managerTut;
@@ -21,13 +23,13 @@ public class TutorialPopUp : MonoBehaviour
 
     public void Update()
     {
-        skipTime = timer;
+        childCount = managerTut.transform.childCount;
         if (startTimer == true && timer >= 0)
         {
             timer -= Time.deltaTime;
             if (timer <= 0)
             {
-                Destroy(transform.GetChild(0).gameObject);
+                Destroy(transform.GetChild(childCount - 1).gameObject);
                 startTimer = false;
             }
         }
@@ -35,10 +37,11 @@ public class TutorialPopUp : MonoBehaviour
 
     public void TutPopUp(int i)
     {
-        if (noLongerPoppinUp[i] == false && timer >= 90f)
+        if (noLongerPoppinUp[i] == false)
         {
-            timer = 90f;
-            Instantiate(tutPopUpGameObject[i], transform.position, Quaternion.identity, managerTut.transform);
+            timer = resetTimer;
+            Vector3 spawnPos = new Vector3(transform.position.x, transform.position.y, transform.position.z + offset);
+            Instantiate(tutPopUpGameObject[i], spawnPos, Quaternion.identity, managerTut.transform);
             noLongerPoppinUp[i] = true;
             startTimer = true;
         }
@@ -46,6 +49,11 @@ public class TutorialPopUp : MonoBehaviour
 
     public void SkipTutorial()
     {
-        timer -= skipTime;
+        timer = 0;
+    }
+
+    public void ResetTimer()
+    {
+        timer = 90;
     }
 }
