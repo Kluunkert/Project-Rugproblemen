@@ -13,6 +13,8 @@ public class DialogueProgress : MonoBehaviour
     public bool conversating;
     public bool startConvo;
 
+    public Animator anim;
+
     public void StartDialogue(Audiodialog a)
     {
         conversationSystem = GetComponent<ConversationSystem>();
@@ -36,7 +38,9 @@ public class DialogueProgress : MonoBehaviour
 
         if (timer <= 0)
         {
+            
             timer = 0;
+            anim.SetBool("PlayAnim", false);
 
             if (Input.GetButtonDown("Fire1"))
             {
@@ -63,6 +67,10 @@ public class DialogueProgress : MonoBehaviour
                     conversating = false;
                 }
             }
+        }
+        else if (timer >= 0)
+        {
+            anim.SetBool("PlayAnim", true);
         }
     }
 
