@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1580913342304658880}
   - component: {fileID: 7542279162848976886}
   - component: {fileID: 4293909133477438223}
+  - component: {fileID: 3915301217940439517}
   m_Layer: 0
   m_Name: Dinner Table 1
   m_TagString: Untagged
@@ -78,3 +79,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &3915301217940439517
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2570378462626338771}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1137061, y: 0.99405664, z: 2.0672698}
+  m_Center: {x: -0.00000029802322, y: 0.4970285, z: 0}

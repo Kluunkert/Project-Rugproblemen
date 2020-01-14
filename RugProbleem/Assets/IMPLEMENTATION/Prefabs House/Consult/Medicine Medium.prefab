@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 860467566855737121}
   - component: {fileID: 8551201058551067927}
   - component: {fileID: 2708758380384258542}
+  - component: {fileID: 1624626623534634097}
+  - component: {fileID: 2796486107374081921}
   m_Layer: 0
   m_Name: Medicine Medium
   m_TagString: Untagged
@@ -78,3 +80,29 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &1624626623534634097
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4443829528904121650}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04524485, y: 0.11465963, z: 0.18207307}
+  m_Center: {x: -0.000001532957, y: 0, z: 0}
+--- !u!65 &2796486107374081921
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4443829528904121650}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04524485, y: 0.11465963, z: 0.18207307}
+  m_Center: {x: -0.000001532957, y: 0, z: 0}

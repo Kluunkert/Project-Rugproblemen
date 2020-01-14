@@ -1,5 +1,44 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!65 &5160438803111927326
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121898998230523602}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07653711, y: 0.06505354, z: 0.030488864}
+  m_Center: {x: 0.023024093, y: 0.032526523, z: 0.0000000041909516}
+--- !u!65 &8740951565772237087
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550035560742968146}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07653705, y: 0.06505354, z: 0.030488864}
+  m_Center: {x: -0.023024064, y: 0.032526523, z: 0.0000000041909516}
+--- !u!65 &603109237303720469
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2233728664302358956}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.06434662, y: 0.075457595, z: 0.24149755}
+  m_Center: {x: 0, y: 0.03772855, z: 0.08857708}
 --- !u!1 &6270026113384375942
 GameObject:
   m_ObjectHideFlags: 0
@@ -27,7 +66,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6270026113384375942}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.948, z: 0.05}
+  m_LocalPosition: {x: 0, y: 0.977, z: 0.05}
   m_LocalScale: {x: 0.08, y: 1, z: 0.05}
   m_Children: []
   m_Father: {fileID: 5070972797979320806}
@@ -104,6 +143,7 @@ GameObject:
   - component: {fileID: 5070972797979320806}
   - component: {fileID: 4252717855582641104}
   - component: {fileID: 7509815260639733545}
+  - component: {fileID: 1372491895855840397}
   m_Layer: 0
   m_Name: Sink Base
   m_TagString: Untagged
@@ -175,6 +215,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &1372491895855840397
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8071839474988815349}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 6663502862478211715, guid: 73cd6a8dfacc35e43b4d4fb82b699b4f, type: 3}
 --- !u!1001 &7395816822571893339
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -182,11 +236,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5070972797979320806}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 39171d45321c126488497f23879a761f,
-        type: 3}
-      propertyPath: m_Name
-      value: Sink Knob Right
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 39171d45321c126488497f23879a761f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -242,6 +291,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 39171d45321c126488497f23879a761f,
+        type: 3}
+      propertyPath: m_Name
+      value: Sink Knob Right
+      objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: 39171d45321c126488497f23879a761f,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -249,6 +303,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 12d4b0485ee9c74449f5e2740ee151ce, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39171d45321c126488497f23879a761f, type: 3}
+--- !u!1 &1550035560742968146 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 39171d45321c126488497f23879a761f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7395816822571893339}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2583250865114065217 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 39171d45321c126488497f23879a761f,
@@ -262,11 +322,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5070972797979320806}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 9709017e8f9a10246bf3fe574ab98276,
-        type: 3}
-      propertyPath: m_Name
-      value: Sink Faucet
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9709017e8f9a10246bf3fe574ab98276,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -322,6 +377,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 9709017e8f9a10246bf3fe574ab98276,
+        type: 3}
+      propertyPath: m_Name
+      value: Sink Faucet
+      objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: 9709017e8f9a10246bf3fe574ab98276,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -329,6 +389,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: f4ad59e900259ec4a86358240475d751, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9709017e8f9a10246bf3fe574ab98276, type: 3}
+--- !u!1 &2233728664302358956 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 9709017e8f9a10246bf3fe574ab98276,
+    type: 3}
+  m_PrefabInstance: {fileID: 7916801980391409829}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2928630284998894527 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 9709017e8f9a10246bf3fe574ab98276,
@@ -342,11 +408,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5070972797979320806}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 6d31b05fd2caa764183f19fc2f400312,
-        type: 3}
-      propertyPath: m_Name
-      value: Sink Knob Left
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 6d31b05fd2caa764183f19fc2f400312,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -402,6 +463,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 6d31b05fd2caa764183f19fc2f400312,
+        type: 3}
+      propertyPath: m_Name
+      value: Sink Knob Left
+      objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: 6d31b05fd2caa764183f19fc2f400312,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -409,6 +475,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: f07e8ee664e2010438b99c337257b83d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d31b05fd2caa764183f19fc2f400312, type: 3}
+--- !u!1 &1121898998230523602 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 6d31b05fd2caa764183f19fc2f400312,
+    type: 3}
+  m_PrefabInstance: {fileID: 8984721009503029211}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4164300136680484033 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 6d31b05fd2caa764183f19fc2f400312,

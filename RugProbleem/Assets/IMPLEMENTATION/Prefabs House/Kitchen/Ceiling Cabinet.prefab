@@ -1,5 +1,19 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!64 &3785470591680778485
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641394322065271617}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 7680550856208638217, guid: afa32736fa03aab4985b7d0a7adeb133, type: 3}
 --- !u!1 &768976725087886923
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,6 +25,7 @@ GameObject:
   - component: {fileID: 4391200510216957016}
   - component: {fileID: 4732064013753636462}
   - component: {fileID: 1339577130135726743}
+  - component: {fileID: 7687959349727982431}
   m_Layer: 0
   m_Name: Ceiling Cabinet
   m_TagString: Untagged
@@ -80,6 +95,34 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &7687959349727982431
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768976725087886923}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 7931623610212210925, guid: dd1f75017d550e54fb52cba83fd1b82d, type: 3}
+--- !u!64 &1771849945583666217
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6742255419002059631}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -1449420141134574102, guid: 11d5eca16b297514299bb3085819dd83, type: 3}
 --- !u!1001 &3364365404211159654
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87,11 +130,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4391200510216957016}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 11d5eca16b297514299bb3085819dd83,
-        type: 3}
-      propertyPath: m_Name
-      value: Ceiling Cabinet Right
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 11d5eca16b297514299bb3085819dd83,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -157,6 +195,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.0000002
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 11d5eca16b297514299bb3085819dd83,
+        type: 3}
+      propertyPath: m_Name
+      value: Ceiling Cabinet Right
+      objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: 11d5eca16b297514299bb3085819dd83,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -164,6 +207,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 10620e7d285a0f943b74fdcac87e3f8e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11d5eca16b297514299bb3085819dd83, type: 3}
+--- !u!1 &6742255419002059631 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 11d5eca16b297514299bb3085819dd83,
+    type: 3}
+  m_PrefabInstance: {fileID: 3364365404211159654}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7767042824222476668 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 11d5eca16b297514299bb3085819dd83,
@@ -177,11 +226,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4391200510216957016}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: afa32736fa03aab4985b7d0a7adeb133,
-        type: 3}
-      propertyPath: m_Name
-      value: Ceiling Cabinet Left
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: afa32736fa03aab4985b7d0a7adeb133,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -247,6 +291,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.0000002
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: afa32736fa03aab4985b7d0a7adeb133,
+        type: 3}
+      propertyPath: m_Name
+      value: Ceiling Cabinet Left
+      objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: afa32736fa03aab4985b7d0a7adeb133,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -254,6 +303,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: f94117e52b74a0e43953b09487b69004, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afa32736fa03aab4985b7d0a7adeb133, type: 3}
+--- !u!1 &641394322065271617 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: afa32736fa03aab4985b7d0a7adeb133,
+    type: 3}
+  m_PrefabInstance: {fileID: 8919200574871204424}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4521026217598638418 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: afa32736fa03aab4985b7d0a7adeb133,

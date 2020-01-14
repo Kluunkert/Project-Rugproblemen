@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 549101367901115597}
   - component: {fileID: 8846699659744407291}
   - component: {fileID: 3024522415270629890}
+  - component: {fileID: 7161344351207759975}
   m_Layer: 0
   m_Name: Cupboard
   m_TagString: Untagged
@@ -79,6 +80,34 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &7161344351207759975
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3586436574306084574}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -5836728072050040443, guid: 1efa72862152c0e4aacf602dc7a6e151, type: 3}
+--- !u!64 &2234407768880197394
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7977313698908079748}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -4765131792115512729, guid: ab0aef7016b6e1140b85b772d56782d4, type: 3}
 --- !u!1001 &2131594181528346509
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -86,11 +115,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 549101367901115597}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: ab0aef7016b6e1140b85b772d56782d4,
-        type: 3}
-      propertyPath: m_Name
-      value: Cupboard Door
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: ab0aef7016b6e1140b85b772d56782d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -146,6 +170,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: ab0aef7016b6e1140b85b772d56782d4,
+        type: 3}
+      propertyPath: m_Name
+      value: Cupboard Door
+      objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: ab0aef7016b6e1140b85b772d56782d4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -153,6 +182,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 3e56b83ba8d5e40489d858e04bc0acd5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab0aef7016b6e1140b85b772d56782d4, type: 3}
+--- !u!1 &7977313698908079748 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: ab0aef7016b6e1140b85b772d56782d4,
+    type: 3}
+  m_PrefabInstance: {fileID: 2131594181528346509}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6408135545982088343 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: ab0aef7016b6e1140b85b772d56782d4,
