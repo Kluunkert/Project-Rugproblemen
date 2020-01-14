@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2509310779323921486}
   - component: {fileID: 6884273632577982072}
   - component: {fileID: 915729426261340801}
+  - component: {fileID: 2586327838406442068}
   m_Layer: 0
   m_Name: Door Interior
   m_TagString: Untagged
@@ -79,6 +80,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &2586327838406442068
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479860200755152477}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.2, z: 0.059999794}
+  m_Center: {x: 0, y: 1.1, z: 0.029999897}
 --- !u!1001 &894095923709105124
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -86,11 +100,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2509310779323921486}
     m_Modifications:
-    - target: {fileID: 1863716224395448492, guid: 011c9c1605e121c4292a54eed4026a98,
-        type: 3}
-      propertyPath: m_Name
-      value: Handle
-      objectReference: {fileID: 0}
     - target: {fileID: 3424452951877345983, guid: 011c9c1605e121c4292a54eed4026a98,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -145,6 +154,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1863716224395448492, guid: 011c9c1605e121c4292a54eed4026a98,
+        type: 3}
+      propertyPath: m_Name
+      value: Handle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 011c9c1605e121c4292a54eed4026a98, type: 3}

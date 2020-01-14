@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!65 &1367921926494465566
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518764768644039526}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.23997936, y: 0.016338382, z: 0.23997945}
+  m_Center: {x: -0.000000044703484, y: -0.006586897, z: -0.000000115484}
 --- !u!1 &2005690368022742369
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,6 +24,7 @@ GameObject:
   - component: {fileID: 3282839473842157426}
   - component: {fileID: 5824838377588051268}
   - component: {fileID: 281882689080471997}
+  - component: {fileID: 4876007622775512747}
   m_Layer: 0
   m_Name: Stove Base 1
   m_TagString: Untagged
@@ -86,6 +100,115 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &4876007622775512747
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005690368022742369}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -8207145972061184932, guid: d713209177849f042b894a9bcbfa49fd, type: 3}
+--- !u!64 &7298888210440844232
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2734620303461705423}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 7844761973393427386, guid: 608c2f5cb8f4cca4fb36e4dab0bd3a15, type: 3}
+--- !u!64 &5073735057724529177
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5236931819921230865}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4088639054864993512, guid: 80d765113439c8b48ad8951f1742b58e, type: 3}
+--- !u!65 &2859072396191266343
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5469516231616790692}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.23997936, y: 0.016338382, z: 0.23997945}
+  m_Center: {x: -0.000000044703484, y: -0.006586897, z: -0.000000115484}
+--- !u!65 &5589481639637400216
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5618343043619620274}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.23997936, y: 0.016338382, z: 0.23997945}
+  m_Center: {x: -0.000000044703484, y: -0.006586897, z: -0.000000115484}
+--- !u!65 &533722650743933183
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6877773337553014506}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.23997936, y: 0.016338382, z: 0.23997945}
+  m_Center: {x: -0.000000044703484, y: -0.006586897, z: -0.000000115484}
+--- !u!64 &296340360205235071
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7163552554089109443}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 2308657066218709778, guid: 951216e988233eb4aab60d226bdc408c, type: 3}
+--- !u!64 &469825544242625624
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7835044130467963316}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -7064602664196968009, guid: 8cea259607c007642937d35b553420f8, type: 3}
 --- !u!1001 &1174278480378826442
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -93,11 +216,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3282839473842157426}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 951216e988233eb4aab60d226bdc408c,
-        type: 3}
-      propertyPath: m_Name
-      value: Stove  Cabinet RD
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 951216e988233eb4aab60d226bdc408c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -153,6 +271,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 951216e988233eb4aab60d226bdc408c,
+        type: 3}
+      propertyPath: m_Name
+      value: Stove  Cabinet RD
+      objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: 951216e988233eb4aab60d226bdc408c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -160,6 +283,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: fef4c4e019db33443865812b62efe4ac, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 951216e988233eb4aab60d226bdc408c, type: 3}
+--- !u!1 &7163552554089109443 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 951216e988233eb4aab60d226bdc408c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1174278480378826442}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6138780954648651216 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 951216e988233eb4aab60d226bdc408c,
@@ -173,11 +302,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3282839473842157426}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 8cea259607c007642937d35b553420f8,
-        type: 3}
-      propertyPath: m_Name
-      value: Stove  Cabinet RU
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8cea259607c007642937d35b553420f8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -233,6 +357,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 8cea259607c007642937d35b553420f8,
+        type: 3}
+      propertyPath: m_Name
+      value: Stove  Cabinet RU
+      objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: 8cea259607c007642937d35b553420f8,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -240,6 +369,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 2e321060c6b0cd74ca8fd1a571822b5e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cea259607c007642937d35b553420f8, type: 3}
+--- !u!1 &7835044130467963316 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 8cea259607c007642937d35b553420f8,
+    type: 3}
+  m_PrefabInstance: {fileID: 2277209568641693885}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6548500795172295591 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 8cea259607c007642937d35b553420f8,
@@ -253,11 +388,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3282839473842157426}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 2081024740d95484f87d27e4bfb6a6dc,
-        type: 3}
-      propertyPath: m_Name
-      value: Stove Metal Thingy (3)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 2081024740d95484f87d27e4bfb6a6dc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -313,6 +443,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 2081024740d95484f87d27e4bfb6a6dc,
+        type: 3}
+      propertyPath: m_Name
+      value: Stove Metal Thingy (3)
+      objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: 2081024740d95484f87d27e4bfb6a6dc,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -320,6 +455,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: d0036ad4bb5cdae4ab44f43d51717bb1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2081024740d95484f87d27e4bfb6a6dc, type: 3}
+--- !u!1 &6877773337553014506 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 2081024740d95484f87d27e4bfb6a6dc,
+    type: 3}
+  m_PrefabInstance: {fileID: 3193948785265825763}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7577759036718120185 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 2081024740d95484f87d27e4bfb6a6dc,
@@ -333,11 +474,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3282839473842157426}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 2081024740d95484f87d27e4bfb6a6dc,
-        type: 3}
-      propertyPath: m_Name
-      value: Stove Metal Thingy (2)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 2081024740d95484f87d27e4bfb6a6dc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -393,6 +529,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 2081024740d95484f87d27e4bfb6a6dc,
+        type: 3}
+      propertyPath: m_Name
+      value: Stove Metal Thingy (2)
+      objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: 2081024740d95484f87d27e4bfb6a6dc,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -400,6 +541,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: d0036ad4bb5cdae4ab44f43d51717bb1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2081024740d95484f87d27e4bfb6a6dc, type: 3}
+--- !u!1 &5469516231616790692 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 2081024740d95484f87d27e4bfb6a6dc,
+    type: 3}
+  m_PrefabInstance: {fileID: 4091042105991879085}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9060391223207293623 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 2081024740d95484f87d27e4bfb6a6dc,
@@ -413,11 +560,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3282839473842157426}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 80d765113439c8b48ad8951f1742b58e,
-        type: 3}
-      propertyPath: m_Name
-      value: Stove Cabinet LD
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 80d765113439c8b48ad8951f1742b58e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -473,6 +615,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 80d765113439c8b48ad8951f1742b58e,
+        type: 3}
+      propertyPath: m_Name
+      value: Stove Cabinet LD
+      objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: 80d765113439c8b48ad8951f1742b58e,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -486,6 +633,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4291011974874469656}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5236931819921230865 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 80d765113439c8b48ad8951f1742b58e,
+    type: 3}
+  m_PrefabInstance: {fileID: 4291011974874469656}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4528844609550507195
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -493,11 +646,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3282839473842157426}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 2081024740d95484f87d27e4bfb6a6dc,
-        type: 3}
-      propertyPath: m_Name
-      value: Stove Metal Thingy
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 2081024740d95484f87d27e4bfb6a6dc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -553,6 +701,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 2081024740d95484f87d27e4bfb6a6dc,
+        type: 3}
+      propertyPath: m_Name
+      value: Stove Metal Thingy
+      objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: 2081024740d95484f87d27e4bfb6a6dc,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -560,6 +713,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: d0036ad4bb5cdae4ab44f43d51717bb1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2081024740d95484f87d27e4bfb6a6dc, type: 3}
+--- !u!1 &5618343043619620274 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 2081024740d95484f87d27e4bfb6a6dc,
+    type: 3}
+  m_PrefabInstance: {fileID: 4528844609550507195}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8908969864944351137 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 2081024740d95484f87d27e4bfb6a6dc,
@@ -573,11 +732,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3282839473842157426}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 608c2f5cb8f4cca4fb36e4dab0bd3a15,
-        type: 3}
-      propertyPath: m_Name
-      value: Stove Cabinet LU
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 608c2f5cb8f4cca4fb36e4dab0bd3a15,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -633,6 +787,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 608c2f5cb8f4cca4fb36e4dab0bd3a15,
+        type: 3}
+      propertyPath: m_Name
+      value: Stove Cabinet LU
+      objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: 608c2f5cb8f4cca4fb36e4dab0bd3a15,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -646,6 +805,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6256273642408689606}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2734620303461705423 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 608c2f5cb8f4cca4fb36e4dab0bd3a15,
+    type: 3}
+  m_PrefabInstance: {fileID: 6256273642408689606}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8364003474858007151
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -653,11 +818,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3282839473842157426}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 2081024740d95484f87d27e4bfb6a6dc,
-        type: 3}
-      propertyPath: m_Name
-      value: Stove Metal Thingy (1)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 2081024740d95484f87d27e4bfb6a6dc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -713,6 +873,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 2081024740d95484f87d27e4bfb6a6dc,
+        type: 3}
+      propertyPath: m_Name
+      value: Stove Metal Thingy (1)
+      objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: 2081024740d95484f87d27e4bfb6a6dc,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -720,6 +885,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: d0036ad4bb5cdae4ab44f43d51717bb1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2081024740d95484f87d27e4bfb6a6dc, type: 3}
+--- !u!1 &518764768644039526 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 2081024740d95484f87d27e4bfb6a6dc,
+    type: 3}
+  m_PrefabInstance: {fileID: 8364003474858007151}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3560196755307032949 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 2081024740d95484f87d27e4bfb6a6dc,

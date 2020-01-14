@@ -1,5 +1,31 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!65 &2024678387273222818
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972820716272263376}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9949789, y: 0.030362234, z: 0.532282}
+  m_Center: {x: -0.00000090897083, y: -0.00000002188608, z: 0}
+--- !u!65 &2458217585878731785
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669455695611594442}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9949789, y: 0.030362234, z: 0.532282}
+  m_Center: {x: -0.00000090897083, y: -0.00000002188608, z: 0}
 --- !u!1 &5030447656846947725
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,6 +37,7 @@ GameObject:
   - component: {fileID: 8328533008774072222}
   - component: {fileID: 1067320238927199656}
   - component: {fileID: 6769872799992168785}
+  - component: {fileID: 7637622705879051006}
   m_Layer: 0
   m_Name: Medicine Cabinet
   m_TagString: Untagged
@@ -81,6 +108,33 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &7637622705879051006
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5030447656846947725}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -2168320926229744582, guid: 122bb6acea0d2f74e9895cc7e8ad6113, type: 3}
+--- !u!65 &4966293573898483246
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5743262423591962774}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9949789, y: 0.030362234, z: 0.532282}
+  m_Center: {x: -0.00000090897083, y: -0.00000002188608, z: 0}
 --- !u!1001 &4365614941059879327
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -88,11 +142,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8328533008774072222}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 8c5e0cc130ce6e74098b098e02fd0f1a,
-        type: 3}
-      propertyPath: m_Name
-      value: Glass Plate (2)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8c5e0cc130ce6e74098b098e02fd0f1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -148,6 +197,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 8c5e0cc130ce6e74098b098e02fd0f1a,
+        type: 3}
+      propertyPath: m_Name
+      value: Glass Plate (2)
+      objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: 8c5e0cc130ce6e74098b098e02fd0f1a,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -155,6 +209,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: e6ef655ea690fce449649316bacf5146, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c5e0cc130ce6e74098b098e02fd0f1a, type: 3}
+--- !u!1 &5743262423591962774 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 8c5e0cc130ce6e74098b098e02fd0f1a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4365614941059879327}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8786368280712100485 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 8c5e0cc130ce6e74098b098e02fd0f1a,
@@ -168,11 +228,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8328533008774072222}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 8c5e0cc130ce6e74098b098e02fd0f1a,
-        type: 3}
-      propertyPath: m_Name
-      value: Glass Plate (1)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8c5e0cc130ce6e74098b098e02fd0f1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -228,6 +283,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 8c5e0cc130ce6e74098b098e02fd0f1a,
+        type: 3}
+      propertyPath: m_Name
+      value: Glass Plate (1)
+      objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: 8c5e0cc130ce6e74098b098e02fd0f1a,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -235,6 +295,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: e6ef655ea690fce449649316bacf5146, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c5e0cc130ce6e74098b098e02fd0f1a, type: 3}
+--- !u!1 &1669455695611594442 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 8c5e0cc130ce6e74098b098e02fd0f1a,
+    type: 3}
+  m_PrefabInstance: {fileID: 7208842478540152771}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2409497014534960345 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 8c5e0cc130ce6e74098b098e02fd0f1a,
@@ -248,11 +314,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8328533008774072222}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 8c5e0cc130ce6e74098b098e02fd0f1a,
-        type: 3}
-      propertyPath: m_Name
-      value: Glass Plate
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8c5e0cc130ce6e74098b098e02fd0f1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -308,6 +369,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 8c5e0cc130ce6e74098b098e02fd0f1a,
+        type: 3}
+      propertyPath: m_Name
+      value: Glass Plate
+      objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: 8c5e0cc130ce6e74098b098e02fd0f1a,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -315,6 +381,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: e6ef655ea690fce449649316bacf5146, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c5e0cc130ce6e74098b098e02fd0f1a, type: 3}
+--- !u!1 &972820716272263376 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 8c5e0cc130ce6e74098b098e02fd0f1a,
+    type: 3}
+  m_PrefabInstance: {fileID: 9124796833317779929}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4313180231119295171 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 8c5e0cc130ce6e74098b098e02fd0f1a,

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4904304762321416536}
   - component: {fileID: 4131086794771106670}
   - component: {fileID: 7667405742364194711}
+  - component: {fileID: 1110751870633117626}
   m_Layer: 0
   m_Name: Table Lamp
   m_TagString: Untagged
@@ -79,6 +80,33 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &1110751870633117626
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8238437125267800907}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -4847486273731406439, guid: 1b7dfddbe6b305d428ba5f528c0eebec, type: 3}
+--- !u!65 &6660316440774356569
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8388374658340455584}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.012979846, y: 0.0043243915, z: 0.012979845}
+  m_Center: {x: 0.00000005750917, y: -0.00080982596, z: -0.0000003699679}
 --- !u!1001 &524831365024898473
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -86,11 +114,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4904304762321416536}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 274c1d995f914694ba9f6a7efc8fd828,
-        type: 3}
-      propertyPath: m_Name
-      value: Table Lamp Button
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 274c1d995f914694ba9f6a7efc8fd828,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -146,6 +169,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 274c1d995f914694ba9f6a7efc8fd828,
+        type: 3}
+      propertyPath: m_Name
+      value: Table Lamp Button
+      objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: 274c1d995f914694ba9f6a7efc8fd828,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -153,6 +181,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 533bbfcf45abf234aa9c4fe6d1e1e390, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 274c1d995f914694ba9f6a7efc8fd828, type: 3}
+--- !u!1 &8388374658340455584 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 274c1d995f914694ba9f6a7efc8fd828,
+    type: 3}
+  m_PrefabInstance: {fileID: 524831365024898473}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4769918480651876019 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 274c1d995f914694ba9f6a7efc8fd828,

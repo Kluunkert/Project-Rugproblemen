@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6429216119708979589}
   - component: {fileID: 2621709886109985715}
   - component: {fileID: 8601495042164315978}
+  - component: {fileID: 7797848366413851868}
   m_Layer: 0
   m_Name: Medicine Large
   m_TagString: Untagged
@@ -78,3 +79,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &7797848366413851868
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8026100801836344214}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0707689, y: 0.17934276, z: 0.28478628}
+  m_Center: {x: -0.000002399087, y: 0, z: 0}
